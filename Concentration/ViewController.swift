@@ -27,12 +27,7 @@ class ViewController: UIViewController {
     }
 
     private func updateTouches() {
-            let attributes: [NSAttributedString.Key: Any] = [
-                .strokeColor: UIColor.gray,
-                .strokeWidth: 8.0
-            ]
-            let attributedString = NSAttributedString(string: "Taps: \(taps)", attributes: attributes)
-            tapsLabel.attributedText = attributedString
+            tapsLabel.text = "Taps: \(taps)"
     }
     
 //  Add number of taps on change:
